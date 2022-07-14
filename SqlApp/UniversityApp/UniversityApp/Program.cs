@@ -215,15 +215,15 @@ while (true)
 void PrintCommands()
 {
     Console.WriteLine("Доступные команды:\n");
-    Console.WriteLine("get-faculties - ");
-    Console.WriteLine("get-faculty-by-name - ");
-    Console.WriteLine("delete-faculty-by-name - ");
-    Console.WriteLine("get-class-by-facultyid - ");
-    Console.WriteLine("get-classes - ");
-    Console.WriteLine("get-class-by-id - ");
-    Console.WriteLine("update-class-by-id - ");
-    Console.WriteLine("group-students-from-age - ");
-    Console.WriteLine("get-student-by-id - ");
+    Console.WriteLine("get-faculties - Получить список факультетов");
+    Console.WriteLine("get-faculty-by-name - Получить факультет по названию");
+    Console.WriteLine("delete-faculty-by-name - Удалить факультет по названию");
+    Console.WriteLine("get-class-by-facultyid - Получить список классов одного факультета");
+    Console.WriteLine("get-classes - Получить список классов");
+    Console.WriteLine("get-class-by-id - Получить класс по id");
+    Console.WriteLine("update-class-by-id - Изменить поля класса по id");
+    Console.WriteLine("group-students-from-age - Количество ровесников");
+    Console.WriteLine("get-student-by-id - Получить студента по id");
 
     Console.WriteLine("help - все команды");
     Console.WriteLine("exit - Выход\n");
