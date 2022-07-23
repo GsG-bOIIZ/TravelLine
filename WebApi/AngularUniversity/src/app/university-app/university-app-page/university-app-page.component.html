@@ -1,0 +1,140 @@
+<h2 style="text-align: center">University App</h2>
+
+<mat-tab-group mat-align-tabs="center" animationDuration="0ms">
+    <mat-tab label="Faculty">
+        <div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
+
+            <uni-faculty-item style="text-align: center" *ngFor="let faculty of faculties"
+                              [faculty]="faculty"
+                              (delete)="deleteFaculty($event)">
+            </uni-faculty-item>
+
+            <mat-accordion>
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Create or update faculty
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <form [formGroup]="formFaculty" style="text-align: center;">
+                        <mat-form-field>
+                            <mat-label>Id</mat-label>
+                            <input formControlName="id" matInput>
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <mat-label>New name</mat-label>
+                            <input formControlName="name" matInput>
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <mat-label>New dean</mat-label>
+                            <input formControlName="dean" matInput>
+                        </mat-form-field>
+                        <div style="display: flex; justify-content: space-evenly;">
+                            <button mat-raised-button color="warn" (click)="createFaculty()">Create</button>
+                            <button mat-raised-button color="warn" (click)="updateFaculty()">Update</button>
+                        </div>    
+                    </form>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+          </div>
+    </mat-tab>
+
+    <mat-tab label="Group">
+        <div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
+            <uni-group-item style="text-align: center" *ngFor="let group of groups"
+                              [group]="group"
+                              (delete)="deleteGroup($event)">
+            </uni-group-item>
+
+            <mat-accordion>
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Create new Group
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <form [formGroup]="formGroup" style="text-align: center">
+                        <mat-form-field>
+                            <mat-label>Id</mat-label>
+                            <input formControlName="id" matInput>
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <mat-label>New name</mat-label>
+                            <input formControlName="name" matInput>
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <mat-label>Faculty ID</mat-label>
+                            <input formControlName="facultyId" matInput>
+                        </mat-form-field>
+                        <br>
+                        <div style="display: flex; justify-content: space-evenly;">
+                            <button mat-raised-button color="warn" (click)="createGroup()">Create</button>
+                            <button mat-raised-button color="warn" (click)="updateGroup()">Update</button>
+                        </div>
+                    </form>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+    </mat-tab>
+
+    <mat-tab label="Student">
+        <div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
+            <uni-student-item style="text-align: center" *ngFor="let student of students"
+                            [student]="student"
+                            (delete)="deleteStudent($event)">
+            </uni-student-item>
+
+            <mat-accordion>
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Create new Student
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <form [formGroup]="formStudent" style="text-align: center">
+                        <mat-form-field>
+                            <mat-label>Id</mat-label>
+                            <input formControlName="id" matInput>
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <mat-label>New surname</mat-label>
+                            <input formControlName="surname" matInput>
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <mat-label>New name</mat-label>
+                            <input formControlName="name" matInput>
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <mat-label>New patronymic</mat-label>
+                            <input formControlName="patronymic" matInput>
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <mat-label>New age</mat-label>
+                            <input formControlName="age" matInput>
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field>
+                            <mat-label>New Class ID</mat-label>
+                            <input formControlName="classId" matInput>
+                        </mat-form-field>
+                        <br>
+                        <div style="display: flex; justify-content: space-evenly;">
+                            <button mat-raised-button color="warn" (click)="createStudent()">Create</button>
+                            <button mat-raised-button color="warn" (click)="updateStudent()">Update</button>
+                        </div>
+                    </form>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+    </mat-tab>
+
+</mat-tab-group>

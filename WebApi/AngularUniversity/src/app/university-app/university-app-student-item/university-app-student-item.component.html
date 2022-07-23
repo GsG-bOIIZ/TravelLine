@@ -1,0 +1,9 @@
+<div style="display: flex; justify-content: space-between; align-items: flex-end; width: 550px">
+  <p>{{student.id}}</p>
+  <p style="min-width: 320px">{{student.surname}} {{student.name}} {{student.patronymic}}</p>
+  <p>{{student.age}}</p>
+  <p>{{student.classId}}</p>
+  <button style="margin: 0 10px" mat-raised-button color="warn" (click)="deleteStudent()">
+    Delete
+  </button>
+</div>
