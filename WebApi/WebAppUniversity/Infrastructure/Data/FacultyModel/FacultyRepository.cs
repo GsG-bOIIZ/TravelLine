@@ -38,5 +38,10 @@ namespace WebAppUniversity.Repositories
         {
             _dbContext.Faculty.Update(faculty);
         }
+
+        public Faculty GetByName(string name)
+        {
+            return _dbContext.Faculty.FirstOrDefault(x => x.Name == name);
+        }
     }
 }

@@ -11,6 +11,7 @@ export class FacultyService {
     }
 
     public addFaculty(faculty: IFaculty): Observable<null> {
+        
         return this.httpClient.post<null>(`${this.apiUrl}/create`, faculty);
     }
 
@@ -24,5 +25,9 @@ export class FacultyService {
 
     public updateFaculty(faculty: IFaculty): Observable<null> {
         return this.httpClient.post<null>(`${this.apiUrl}/update`, faculty);
+    }
+
+    public getFacultyByName(name: string): Observable<IFaculty> {
+        return this.httpClient.get<IFaculty>(`${this.apiUrl}/name/${name}`);
     }
 }

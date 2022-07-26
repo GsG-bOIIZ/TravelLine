@@ -1,0 +1,47 @@
+<div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
+    <mat-accordion>
+        <uni-student-item style="text-align: center" *ngFor="let student of students"
+                          [student]="student"
+                          (delete)="deleteStudent($event)">
+        </uni-student-item>
+    </mat-accordion>
+    <mat-accordion>
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Create new Student
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <form [formGroup]="formStudent" style="text-align: center">
+                <mat-form-field>
+                    <mat-label>New surname</mat-label>
+                    <input formControlName="surname" matInput type="string">
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label>New name</mat-label>
+                    <input formControlName="name" matInput type="string">
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label>New patronymic</mat-label>
+                    <input formControlName="patronymic" matInput type="string">
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label>New age</mat-label>
+                    <input formControlName="age" matInput type="number" min="17" max="100">
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label>Class name</mat-label>
+                    <input formControlName="classId" matInput type="string">
+                </mat-form-field>
+                <br>
+                <div style="display: flex; justify-content: space-evenly;">
+                    <button mat-raised-button color="warn" (click)="createStudent()">Create</button>
+                </div>
+            </form>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

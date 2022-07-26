@@ -10,5 +10,8 @@ namespace WebAppUniversity.Services
         public void DeleteGroup(int groupId);
         public Group GetGroup(int groupId);
         public int UpdateGroup(GroupDto groupDto);
+        public List<Group> GetGroupsWithFacultyId(int facultyId);
+        public Group GetGroupByName(string groupName);
+
     }
 }

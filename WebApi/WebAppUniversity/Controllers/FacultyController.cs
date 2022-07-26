@@ -86,5 +86,19 @@ namespace WebAppUniversity.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpGet]
+        [Route("name/{facultyName}")]
+        public IActionResult GetFacultyByName(string facultyName)
+        {
+            try
+            {
+                return Ok(_facultyService.GetFacultyByName(facultyName).ConvertToFacultyDto());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

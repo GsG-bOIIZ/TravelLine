@@ -1,8 +1,45 @@
-<div style="display: flex; justify-content: space-between; align-items: center; width: 450px">
-  <p>{{faculty.id}}</p>
-  <p>{{faculty.name}}</p>
-  <p>{{faculty.dean}}</p>
-  <button style="margin: 0 10px" mat-raised-button color="warn" (click)="deleteFaculty()">
-    Delete
-  </button>
-</div>
+
+<mat-expansion-panel hideToggle style="margin: 5px">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <p style="width: 100px">Name: {{faculty.name}}</p>
+        <p style="width: 300px">Dean: {{faculty.dean}}</p>
+        <button style="width: 100px" mat-raised-button color="warn" (click)="deleteFacultyClicked()">
+          Delete
+        </button>
+      </div>
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <div style="border: 0px solid black; border-radius: 5%; width: 200px; box-shadow: 0 1px 2px gray; padding: 20px; margin: 5px">
+      <p style="font-size: 20px">Update</p>
+      <form [formGroup]="formUpdateFaculty" style="text-align: center; ">
+        <mat-form-field>
+          <mat-label>New name</mat-label>
+          <input formControlName="name" matInput type="string">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label>New dean</mat-label>
+          <input formControlName="dean" matInput type="string">
+        </mat-form-field>
+        <div style="display: flex; justify-content: space-evenly;">
+          <button mat-raised-button color="warn" (click)="updateFaculty(faculty)">Update</button>
+        </div>
+      </form>      
+    </div>
+    <div>
+      <div>
+        <button mat-raised-button color="warn" (click)="getGroupsWithFacultyId(faculty.id)" style="margin: 5px">View</button>
+        <button mat-raised-button color="warn" (click)="clearGroups()" style="margin: 5px">Clear</button>
+      </div>
+      <p>Class name:</p>
+      <div *ngFor="let group of groups" style="display: flex; justify-content: center; align-items: center;">        
+        <p>{{group.name}}</p>
+      </div>
+      
+    </div>
+  </div>
+  
+</mat-expansion-panel>

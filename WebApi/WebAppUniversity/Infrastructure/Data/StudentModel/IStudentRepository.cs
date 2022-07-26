@@ -9,5 +9,7 @@ namespace WebAppUniversity.Repositories
         Student Create(Student student);
         void Delete(Student student);
         void Update(Student student);
+        List<Student> GetStudentsWithClassId(int classId);
+        Student GetBySurname(string surname);
     }
 }

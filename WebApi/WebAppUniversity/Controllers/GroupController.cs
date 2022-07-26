@@ -86,5 +86,34 @@ namespace WebAppUniversity.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpGet]
+        [Route("f/{facultyId}")]
+        public IActionResult GetGroupWithFacultyId(int facultyId)
+        {
+            try
+            {
+                return Ok(_groupService.GetGroupsWithFacultyId(facultyId)
+                    .ConvertAll(t => t.ConvertToGroupDto()));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("name/{groupName}")]
+        public IActionResult GetGroupByName(string groupName)
+        {
+            try
+            {
+                return Ok(_groupService.GetGroupByName(groupName).ConvertToGroupDto());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

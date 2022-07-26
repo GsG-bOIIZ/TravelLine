@@ -10,6 +10,7 @@ namespace WebAppUniversity.Services
         public void DeleteStudent(int studentId);
         public Student GetStudent(int studentId);
         public int UpdateStudent(StudentDto student);
-
+        public List<Student> GetStudentsWithClassId(int classId);
+        public Student GetStudentBySurname(string surname);
     }
 }

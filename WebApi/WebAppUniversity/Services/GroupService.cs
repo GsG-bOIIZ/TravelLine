@@ -73,5 +73,27 @@ namespace WebAppUniversity.Services
             
             return groupEntity.Id;
         }
+
+        public List<Group> GetGroupsWithFacultyId(int facultyId)
+        {
+            List<Group> groups = _groupRepository.GetGroupsWithFacultyId(facultyId);
+            if (groups == null)
+            {
+                throw new Exception($"{nameof(groups)} not found, #facultyId - {facultyId}");
+            }
+
+            return groups;
+        }
+
+        public Group GetGroupByName(string groupName)
+        {
+            Group group = _groupRepository.GetByName(groupName);
+            if (group == null)
+            {
+                throw new Exception($"{nameof(group)} not found, #Id - {groupName}");
+            }
+
+            return group;
+        }
     }
 }

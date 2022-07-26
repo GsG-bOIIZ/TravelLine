@@ -12,13 +12,21 @@ import {UniversityAppGroupItemComponent} from './university-app-group-item/unive
 import {UniversityAppStudentItemComponent} from './university-app-student-item/university-app-student-item.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {ReactiveFormsModule} from "@angular/forms";
+import {MatTableModule} from "@angular/material/table";
+import { UniversityAppFacultyPageComponent } from './university-app-faculty-page/university-app-faculty-page.component';
+import { UniversityAppGroupPageComponent } from './university-app-group-page/university-app-group-page.component';
+import { UniversityAppStudentPageComponent } from './university-app-student-page/university-app-student-page.component';
+
 
 @NgModule({
   declarations: [
     UniversityAppPageComponent,
     UniversityAppItemComponent,
     UniversityAppGroupItemComponent,
-    UniversityAppStudentItemComponent
+    UniversityAppStudentItemComponent,
+    UniversityAppFacultyPageComponent,
+    UniversityAppGroupPageComponent,
+    UniversityAppStudentPageComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +37,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     HttpClientModule,
     MatInputModule,
     MatExpansionModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTableModule
   ]
 })
 export class UniversityAppModule {

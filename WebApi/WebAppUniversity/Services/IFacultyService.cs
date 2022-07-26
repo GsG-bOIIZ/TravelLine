@@ -10,5 +10,6 @@ namespace WebAppUniversity.Services
         public void DeleteFaculty(int facultyId);
         public Faculty GetFaculty(int facultyId);
         public int UpdateFaculty(FacultyDto facultyDto);
+        public Faculty GetFacultyByName(string name);
     }
 }

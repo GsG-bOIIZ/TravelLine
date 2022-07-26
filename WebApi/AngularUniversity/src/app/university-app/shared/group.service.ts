@@ -10,7 +10,7 @@ export class GroupService {
     constructor(private httpClient: HttpClient) {
     }
 
-    public addGroup(group: IGroup): Observable<null> {
+    public addGroup(group: IGroup): Observable<null> {        
         return this.httpClient.post<null>(`${this.apiUrl}/create`, group);
     }
 
@@ -24,5 +24,13 @@ export class GroupService {
 
     public updateGroup(group: IGroup): Observable<null> {
         return this.httpClient.post<null>(`${this.apiUrl}/update`, group);
+    }
+
+    public getGroupsWithFacultyId(id: number): Observable<IGroup[]> {
+        return this.httpClient.get<IGroup[]>(`${this.apiUrl}/f/${id}`);
+    }
+
+    public getGroupByName(name: string): Observable<IGroup> {
+        return this.httpClient.get<IGroup>(`${this.apiUrl}/name/${name}`);
     }
 }

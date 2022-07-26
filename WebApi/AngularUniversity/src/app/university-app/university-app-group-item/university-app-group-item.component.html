@@ -1,8 +1,47 @@
-<div style="display: flex; justify-content: space-between; align-items: center; width: 450px">
-  <p>{{group.id}}</p>
-  <p>{{group.name}}</p>
-  <p>{{group.facultyId}}</p>
-  <button style="margin: 0 10px" mat-raised-button color="warn" (click)="deleteGroup()">
-    Delete
-  </button>
-</div>
+
+
+  <mat-expansion-panel hideToggle style="margin: 5px">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <div style="display: flex; justify-content: space-around; align-items: center; width: 450px">
+          <p>Name: {{group.name}}</p>
+          <button style="margin: 0 10px" mat-raised-button color="warn" (click)="deleteGroupClicked()">
+            Delete
+          </button>
+        </div>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <div style="border: 0px solid black; border-radius: 5%; width: 200px; box-shadow: 0 1px 2px gray; padding: 20px; margin: 5px">
+        <p style="font-size: 20px">Update</p>
+        <form [formGroup]="formUpdateGroup" style="text-align: center;">
+          <mat-form-field>
+            <mat-label>New name</mat-label>
+            <input formControlName="name" matInput type="string">
+          </mat-form-field>
+          <br>
+          <mat-form-field>
+            <mat-label>Faculty</mat-label>
+            <input formControlName="facultyId" matInput type="string">
+          </mat-form-field>
+          <div style="display: flex; justify-content: space-evenly;">
+            <button mat-raised-button color="warn" (click)="updateGroupClicked(group)">Update</button>
+          </div>
+        </form>
+      </div>
+    
+      <div>
+        <button mat-raised-button color="warn" (click)="getStudentsWithClassId(group.id)" style="margin: 5px">View</button>
+        <button mat-raised-button color="warn" (click)="clearStudents()" style="margin: 5px">Clear</button>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center; width: 300px">
+        <p>ФИО:</p>
+        <p>Возраст</p>
+      </div>
+      <div *ngFor="let student of students" style="display: flex; justify-content: space-between; align-items: center; width: 300px">
+        <p>{{student.surname}} {{student.name}} {{student.patronymic}}</p>
+        <p>{{student.age}}</p>
+      </div>
+
+    </div>
+  </mat-expansion-panel>

@@ -38,5 +38,15 @@ namespace WebAppUniversity.Repositories
         {
             _dbContext.Class.Update(group);
         }
+
+        public List<Group> GetGroupsWithFacultyId(int facultyId)
+        {
+            return _dbContext.Class.Where(x => x.FacultyId == facultyId).ToList();
+        }
+
+        public Group GetByName(string name)
+        {
+            return _dbContext.Class.FirstOrDefault(x => x.Name == name);
+        }
     }
 }

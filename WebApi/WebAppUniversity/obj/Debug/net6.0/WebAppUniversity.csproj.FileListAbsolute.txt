@@ -1,0 +1,90 @@
+E:\! TravelLine\WebAppUniversity\bin\Debug\net6.0\appsettings.Development.json
+E:\! TravelLine\WebAppUniversity\bin\Debug\net6.0\appsettings.json
+E:\! TravelLine\WebAppUniversity\bin\Debug\net6.0\WebAppUniversity.exe
+E:\! TravelLine\WebAppUniversity\bin\Debug\net6.0\WebAppUniversity.deps.json
+E:\! TravelLine\WebAppUniversity\bin\Debug\net6.0\WebAppUniversity.runtimeconfig.json
+E:\! TravelLine\WebAppUniversity\bin\Debug\net6.0\WebAppUniversity.dll
+E:\! TravelLine\WebAppUniversity\bin\Debug\net6.0\WebAppUniversity.pdb
+E:\! TravelLine\WebAppUniversity\bin\Debug\net6.0\System.Data.SqlClient.dll
+E:\! TravelLine\WebAppUniversity\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+E:\! TravelLine\WebAppUniversity\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+E:\! TravelLine\WebAppUniversity\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+E:\! TravelLine\WebAppUniversity\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\! TravelLine\WebAppUniversity\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\! TravelLine\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.csproj.AssemblyReference.cache
+E:\! TravelLine\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.GeneratedMSBuildEditorConfig.editorconfig
+E:\! TravelLine\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.AssemblyInfoInputs.cache
+E:\! TravelLine\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.AssemblyInfo.cs
+E:\! TravelLine\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.csproj.CoreCompileInputs.cache
+E:\! TravelLine\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.MvcApplicationPartsAssemblyInfo.cache
+E:\! TravelLine\WebAppUniversity\obj\Debug\net6.0\staticwebassets.build.json
+E:\! TravelLine\WebAppUniversity\obj\Debug\net6.0\staticwebassets.development.json
+E:\! TravelLine\WebAppUniversity\obj\Debug\net6.0\scopedcss\bundle\WebAppUniversity.styles.css
+E:\! TravelLine\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.csproj.CopyComplete
+E:\! TravelLine\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.dll
+E:\! TravelLine\WebAppUniversity\obj\Debug\net6.0\refint\WebAppUniversity.dll
+E:\! TravelLine\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.pdb
+E:\! TravelLine\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.genruntimeconfig.cache
+E:\! TravelLine\WebAppUniversity\obj\Debug\net6.0\ref\WebAppUniversity.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\appsettings.Development.json
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\appsettings.json
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\WebAppUniversity.exe
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\WebAppUniversity.deps.json
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\WebAppUniversity.runtimeconfig.json
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\WebAppUniversity.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\WebAppUniversity.pdb
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\System.Data.SqlClient.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\AAA\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.csproj.AssemblyReference.cache
+E:\AAA\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.GeneratedMSBuildEditorConfig.editorconfig
+E:\AAA\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.AssemblyInfoInputs.cache
+E:\AAA\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.AssemblyInfo.cs
+E:\AAA\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.csproj.CoreCompileInputs.cache
+E:\AAA\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.MvcApplicationPartsAssemblyInfo.cache
+E:\AAA\WebAppUniversity\obj\Debug\net6.0\staticwebassets.build.json
+E:\AAA\WebAppUniversity\obj\Debug\net6.0\staticwebassets.development.json
+E:\AAA\WebAppUniversity\obj\Debug\net6.0\scopedcss\bundle\WebAppUniversity.styles.css
+E:\AAA\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.csproj.CopyComplete
+E:\AAA\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.dll
+E:\AAA\WebAppUniversity\obj\Debug\net6.0\refint\WebAppUniversity.dll
+E:\AAA\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.pdb
+E:\AAA\WebAppUniversity\obj\Debug\net6.0\WebAppUniversity.genruntimeconfig.cache
+E:\AAA\WebAppUniversity\obj\Debug\net6.0\ref\WebAppUniversity.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\System.Drawing.Common.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\System.Runtime.Caching.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\System.Security.Permissions.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\System.Windows.Extensions.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\Humanizer.dll
+E:\AAA\WebAppUniversity\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll

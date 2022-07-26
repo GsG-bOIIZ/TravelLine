@@ -9,5 +9,6 @@ namespace WebAppUniversity.Repositories
         Faculty Create(Faculty faculty);
         void Delete(Faculty faculty);
         void Update(Faculty faculty);
+        Faculty GetByName(string name);
     }
 }

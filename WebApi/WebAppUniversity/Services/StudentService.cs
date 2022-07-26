@@ -72,6 +72,30 @@ namespace WebAppUniversity.Services
             _unitOfWork.Commit();
             
             return studentEntity.Id;
+        }     
+
+        public List<Student> GetStudentsWithClassId(int classId)
+        {
+            List<Student> students = _studentRepository.GetStudentsWithClassId(classId);
+            if (students == null)
+            {
+                throw new Exception($"{nameof(students)} not found, #facultyId - {classId}");
+            }
+
+            return students;
         }
+
+        public Student GetStudentBySurname(string surname)
+        {
+            Student student = _studentRepository.GetBySurname(surname);
+            if (student == null)
+            {
+                throw new Exception($"{nameof(student)} not found, #surname - {surname}");
+            }
+
+            return student;
+        }
+
+
     }
 }

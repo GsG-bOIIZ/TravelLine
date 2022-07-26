@@ -1,0 +1,33 @@
+
+<div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
+    <mat-accordion>
+        <uni-group-item style="text-align: center" *ngFor="let group of groups"
+                        [group]="group"
+                        (delete)="deleteGroup($event)">
+        </uni-group-item>
+    </mat-accordion>
+    <mat-accordion>
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Create group
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <form [formGroup]="formGroup" style="text-align: center;">
+                <mat-form-field>
+                    <mat-label>New name</mat-label>
+                    <input formControlName="name" matInput type="string">
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label>Faculty</mat-label>
+                    <input formControlName="facultyId" matInput type="string">
+                </mat-form-field>
+                <div style="display: flex; justify-content: space-evenly;">
+                    <button mat-raised-button color="warn" (click)="createGroup()">Create</button>
+                </div>
+            </form>
+        </mat-expansion-panel>
+    </mat-accordion>
+
+</div>

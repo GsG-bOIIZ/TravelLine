@@ -9,5 +9,7 @@ namespace WebAppUniversity.Repositories
         Group Create(Group group);
         void Delete(Group group);
         void Update(Group group);
+        List<Group> GetGroupsWithFacultyId(int facultyId);
+        Group GetByName(string name);
     }
 }

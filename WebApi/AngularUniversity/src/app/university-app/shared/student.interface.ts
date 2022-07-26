@@ -4,5 +4,5 @@ export interface IStudent {
     name: string;
     patronymic: string;
     age: number;
-    classId: string;
+    classId: number;
 }

@@ -1,0 +1,34 @@
+
+<div style="display: flex; flex-direction: column; align-items: center; margin: 10px;">
+    <mat-accordion>
+        <uni-faculty-item style="text-align: center" *ngFor="let faculty of faculties"
+                          [faculty]="faculty"
+                          (delete)="deleteFaculty($event)">
+        </uni-faculty-item>
+    </mat-accordion>
+    
+    <mat-accordion>
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Create faculty
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <form [formGroup]="formFaculty" style="text-align: center;">
+                <mat-form-field>
+                    <mat-label>New name</mat-label>
+                    <input formControlName="name" matInput type="string">
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label>New dean</mat-label>
+                    <input formControlName="dean" matInput type="string">
+                </mat-form-field>
+                <div style="display: flex; justify-content: space-evenly;">
+                    <button mat-raised-button color="warn" (click)="createFaculty()">Create</button>
+                </div>    
+            </form>
+        </mat-expansion-panel>
+    </mat-accordion>
+
+  </div>

@@ -4,7 +4,7 @@ import { UniversityAppPageComponent } from "./university-app/university-app-page
 
 const routes: Routes = [
   {
-    path: '**',
+    path: 'def',
     component: UniversityAppPageComponent
   }
 ];

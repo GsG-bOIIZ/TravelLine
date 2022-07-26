@@ -73,5 +73,16 @@ namespace WebAppUniversity.Services
             
             return facultyEntity.Id;
         }
+
+        public Faculty GetFacultyByName(string name)
+        {
+            Faculty faculty = _facultyRepository.GetByName(name);
+            if (faculty == null)
+            {
+                throw new Exception($"{nameof(faculty)} not found, #surname - {name}");
+            }
+
+            return faculty;
+        }
     }
 }

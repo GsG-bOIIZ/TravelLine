@@ -38,5 +38,15 @@ namespace WebAppUniversity.Repositories
         {
             _dbContext.Student.Update(student);
         }
+
+        public List<Student> GetStudentsWithClassId(int classId)
+        {
+            return _dbContext.Student.Where(x => x.ClassId == classId).ToList();
+        }
+
+        public Student GetBySurname(string surname)
+        {
+            return _dbContext.Student.FirstOrDefault(x => x.Surname == surname);
+        }
     }
 }
